@@ -367,18 +367,20 @@ top: 10px;
 border-radius: 6px;
 }
 .chatborder-right:before{ 
-right: -20px;
+right: -18px;
 left: initial;
-border: 10px solid transparent;
+border: 10.9px solid transparent;
 border-left-color: #9cf477;
-z-index: 2
+z-index: 2;
+
  }
  .chatborder-right:after{
-  right: -19px;
+  right: -20px;
 left: initial;
-border: 11px solid transparent;
-border-left-color: #111;
+border: 10px solid transparent;
+border-left-color: #ddd;
 z-index: 1
+top:10px;
  }
 .por{ 
  }
@@ -395,6 +397,7 @@ z-index: 1
     }
     .boxitem .chatborder{ 
       margin: 0 16px;
+      border: 1px solid #ddd;
      }
 .flex-end{
      justify-content: flex-end;
