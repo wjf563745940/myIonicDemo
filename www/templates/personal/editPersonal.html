@@ -1,0 +1,20 @@
+	<ion-view view-title="编辑" ng-controller="PersonalEditCtrl"  class="mypro" hide-tabs="true">
+  <ion-content>
+     <ul class="list">
+
+        <li class="item">
+        <div class="box between" ui-sref="tab.personalEditSave({value:personalIndex.name,key:'name' })" > 
+        <p>修改名字</p>	
+        <div><span>{{personalIndex.name}}</span><i class="icon ion-chevron-right icon-accessory"></i>	</div>	
+        </div>	
+        </li>
+        <li class="item">
+        <div class="box between" ui-sref="tab.personalEditSave({value:personalIndex.sign,key:'sign'})" > 
+        <p>修改签名</p> 
+        <div><span>{{personalIndex.sign}}</span><i class="icon ion-chevron-right icon-accessory"></i> </div>  
+        </div>  
+        </li>
+   
+      </ul>
+	  </ion-content>
+</ion-view>

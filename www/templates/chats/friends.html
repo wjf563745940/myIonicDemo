@@ -1,0 +1,28 @@
+<ion-view ng-controller="FriendsCtrl" class="friend" hide-tabs="true" title="{{66}}">
+	 <ion-nav-buttons side="right">
+     <button class="button button-icon ion-plus" ng-controller="NavBarCtrl2" ng-click="showPopu($event)">
+        </button>
+    </ion-nav-buttons>
+	<ion-content class="">
+	<ion-scroll class="list" id="list" delegate-handle="myScroll" direction="y" style="height:100%">
+    <div  ng-repeat="item in data track by item.id">
+    	<h3 id="{{item.key}}" style="padding-left:8px;" >{{item.key}}</h3>
+    	{{}}
+    	<ul class="list">
+    	<li class="item item-thumbnail-left" ng-repeat="a in item.value track by $index">
+    			 <img ng-src="{{a.header}}">  <a class="a-noder" ng-click="showPopu()"> 
+   					 <p class="p1">{{a.name}}</p>
+					</a>
+    		</li>
+    	</ul>	
+    </div>
+</ion-scroll>
+
+	</ion-content>
+	<div  class="friends-key-box" on-touch="sel($event)" on-drag="sw($event)" >
+	<div class="box box-column">
+		<span ng-repeat="item in data track by item.id">{{item.key}}</span>
+	</div>
+
+</div>
+</ion-view>	
