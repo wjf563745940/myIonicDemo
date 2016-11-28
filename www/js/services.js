@@ -82,6 +82,7 @@
           this.userid=user.id;
          this.username=user.name;
            //告诉服务器端有用户登录
+        this.socket.emit('visitor', {userid:user.id, username:user.name,targetid:target.id,targetname:target.name});   
         this.socket.emit('login', {userid:user.id, username:user.name,targetid:target.id,targetname:target.name});
            //监听消息发送
         this.socket.on('message'+chatId, function(obj){
