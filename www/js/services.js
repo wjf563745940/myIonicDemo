@@ -500,7 +500,7 @@
           return defer.promise;
     },
     login:function(params){
-     // params={'where':{"name":"string","password":"string"}};
+     // params={"where":{"name":"string","password":"string"}};
       var defer=$q.defer();
       var str= JSON.stringify(params) 
       $http({ 
